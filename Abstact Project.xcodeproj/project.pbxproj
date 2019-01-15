@@ -7,21 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F618996021B6D3E5009BDF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618995F21B6D3E5009BDF47 /* AppDelegate.swift */; };
-		F618996221B6D3E5009BDF47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618996121B6D3E5009BDF47 /* ViewController.swift */; };
 		F618996521B6D3E5009BDF47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F618996321B6D3E5009BDF47 /* Main.storyboard */; };
 		F618996721B6D3EB009BDF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F618996621B6D3EB009BDF47 /* Assets.xcassets */; };
-		F618996A21B6D3EB009BDF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F618996821B6D3EB009BDF47 /* LaunchScreen.storyboard */; };
+		F6911C0E21B970A10013F08C /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6911C0D21B970A10013F08C /* AbstractionViewController.swift */; };
+		F6911C1021B971D30013F08C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6911C0F21B971D30013F08C /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F618995C21B6D3E5009BDF47 /* Abstact Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Abstact Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F618995F21B6D3E5009BDF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F618996121B6D3E5009BDF47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F618996421B6D3E5009BDF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F618996621B6D3EB009BDF47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F618996921B6D3EB009BDF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F618996B21B6D3EB009BDF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6911C0D21B970A10013F08C /* AbstractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionViewController.swift; sourceTree = "<group>"; };
+		F6911C0F21B971D30013F08C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +52,37 @@
 		F618995E21B6D3E5009BDF47 /* Abstact Project */ = {
 			isa = PBXGroup;
 			children = (
-				F618995F21B6D3E5009BDF47 /* AppDelegate.swift */,
-				F618996121B6D3E5009BDF47 /* ViewController.swift */,
-				F618996321B6D3E5009BDF47 /* Main.storyboard */,
-				F618996621B6D3EB009BDF47 /* Assets.xcassets */,
-				F618996821B6D3EB009BDF47 /* LaunchScreen.storyboard */,
-				F618996B21B6D3EB009BDF47 /* Info.plist */,
+				F618997321B6D589009BDF47 /* Controller */,
+				F618997121B6D472009BDF47 /* View */,
+				F618997221B6D48A009BDF47 /* Resources */,
 			);
 			path = "Abstact Project";
+			sourceTree = "<group>";
+		};
+		F618997121B6D472009BDF47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F618996321B6D3E5009BDF47 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F618997221B6D48A009BDF47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6911C0F21B971D30013F08C /* AppDelegate.swift */,
+				F618996621B6D3EB009BDF47 /* Assets.xcassets */,
+				F618996B21B6D3EB009BDF47 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F618997321B6D589009BDF47 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F6911C0D21B970A10013F08C /* AbstractionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +117,7 @@
 				TargetAttributes = {
 					F618995B21B6D3E5009BDF47 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -122,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F618996A21B6D3EB009BDF47 /* LaunchScreen.storyboard in Resources */,
 				F618996721B6D3EB009BDF47 /* Assets.xcassets in Resources */,
 				F618996521B6D3E5009BDF47 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F618996221B6D3E5009BDF47 /* ViewController.swift in Sources */,
-				F618996021B6D3E5009BDF47 /* AppDelegate.swift in Sources */,
+				F6911C1021B971D30013F08C /* AppDelegate.swift in Sources */,
+				F6911C0E21B970A10013F08C /* AbstractionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +170,6 @@
 				F618996421B6D3E5009BDF47 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F618996821B6D3EB009BDF47 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F618996921B6D3EB009BDF47 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,14 +295,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Abstact Project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Abstact Project/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.Abstact-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,8 +314,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Abstact Project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Abstact Project/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
